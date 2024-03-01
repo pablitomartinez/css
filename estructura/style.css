@@ -1,0 +1,113 @@
+/*
+Ejercicio HTML y CSS
+? 1.crear un doc HTML y vincularlo con css
+? 2. estructura HTML:
+    * CONTENEDOR GENERAL
+    * CABECERA
+    * MENU
+    * BARRA LATERAL
+    * SECCION DE CONTENIDO PRINCIPAL
+    * ELEENTOS DENTRO DEL CONTENIDO PRINCIPAL
+    * FOOTER
+? 3. TODO EL CONTENIDO DENTRO DE CONTENEDOR GENERAL, CON UN ANCHO DE 1200px Y ESTAR CENTRADO 
+? 4. HEADER OCUPA 100% ANCHO Y TENER UN CONTENEDOR CENTRADO
+?5. MENU CON ELEMENTOS UNO A LADO DE OTRO
+?6. CONTENIDO PRINCIPAL CON ANCHO DE 70%
+? 7. CONTENIDO DE CONTENIDO PRINCIPAL, DENE SER UNA CUADRICILA CON 4 LINEAS DE 2 CAJAS
+? 8. BARRA LATERAL DEBE TENER UN ANCHO DE 30%
+9. FOOTER DEBE TENER UN ANCHO DE 100% Y ESTAR ABAJO DE TOOD 
+
+*/
+* {
+  border: 0;
+  margin: 0;
+}
+
+#general {
+  width: 1200px;
+  /* centrar todos los elementos  */
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+#header {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(109, 109, 254);
+  color: white;
+  text-align: center;
+  line-height: 90px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+#menu ul {
+  background-color: #eeeeee;
+  margin-left: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  /* display: inline-block; */
+  display: block;
+  float: left;
+
+  border: 1px solid #ccc;
+}
+#menu ul li:hover {
+  background-color: rgb(73, 221, 73);
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px;
+}
+/* pseudoclase  */
+#menu ul li:hover a {
+  cursor: pointer;
+  color: white;
+}
+
+#contenido {
+  width: 69%;
+  float: left;
+}
+#contenido > h1 {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid green;
+  color: #787878;
+}
+
+#lateral {
+  width: 30%;
+  float: left;
+  border: 1px solid black;
+  min-height: 500px;
+  text-align: center;
+}
+
+#contenido .caja {
+  width: 40%;
+  height: 250px;
+  border: 5px solid black;
+  background-color: red;
+  color: white;
+  float: left;
+  margin: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: #787878;
+  color: antiquewhite;
+  border-top: 10px solid greenyellow;
+}
