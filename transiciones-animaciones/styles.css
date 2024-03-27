@@ -1,0 +1,41 @@
+#boton {
+  display: block;
+  padding: 20px;
+  background-color: green;
+  width: 200px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  border: 1px solid rgb(0, 68, 0);
+  color: white;
+  transition: border 3s, padding 3s;
+}
+
+#boton:hover {
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid red;
+  background-color: orange;
+  color: black;
+}
+
+#caja {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  background-color: lawngreen;
+  color: black;
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+}
+
+@keyframes desplazamiento {
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+}
